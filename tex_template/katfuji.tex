@@ -76,6 +76,14 @@ Argument Component Identification (ACI)はArgument Miningにおける最も基�
 \par
 例えば，Essayデータセット\cite{stab2017}（学生が書いたエッセイに対して，Argument Miningのアノテーションを行ったデータセット）には「As a result, it is clear that people can freely express their patriotic feelings during international sports events.」という文章が含まる．この中からACを抽出すると，「it is clear that people can freely express their patriotic feelings during international sports events」となる．
 
+\begin{figure*}[t]
+\begin{center}
+\includegraphics[width=\linewidth]{figure/bio.eps}
+\end{center}
+\caption{figure/encoding.epsを貼り付けます}
+\label{fig:bio}
+\end{figure*}
+
 \par
 ACの抽出は，系列ラベリングの問題に落とし込める．一般的にはBIOエンコーディングといって，ACの最初のトークンを"B"，ACの中のトークンを"I"，ACの外のトークンを"O"で表す．図\ref{fig:bio}に，先程のエッセイの例をBIOで可視化したものを示す．
 
@@ -91,17 +99,13 @@ ACの抽出は，系列ラベリングの問題に落とし込める．一般的
   \item 文字レベルCNN+双方向LSTM+CRF
 \end{itemize}
 
-\par
-ACを抽出するには，
-このとき，図\ref{fig:bio}
+\noindent
+入力には，単語のBoWやGlove埋め込み表現，品詞埋め込み表現などが用いられてきた．しかし「依存構造」が用いられることは多くなかった．また，ニューラルネットにおいて依存構造解析結果を入力としたアーキテクチャが開発されて来なかった．依存構造とは単語間の係り受けの関係である．本研究では，依存構造解析器によって得られる係り受けを明示的にニューラルネットで扱うことで，ACIのパフォーマンスにどのような影響を与えるかを調べる．
 
-\begin{figure*}[t]
-\begin{center}
-\includegraphics[width=\linewidth]{figure/bio.eps}
-\end{center}
-\caption{figure/encoding.epsを貼り付けます}
-\label{fig:bio}
-\end{figure*}
+
+\section{関連研究がどんな貢献をしたか}
+あああ
+
 
 \begin{figure*}[t]
 \begin{center}
@@ -111,27 +115,12 @@ ACを抽出するには，
 \label{fig:encoding}
 \end{figure*}
 
-\par
-段落を下げます．
-
-
-
-\noindent
-段落を下げません．
-
-
-\section{関連研究がどんな貢献をしたか}
-AMにおいては議論構造を自動的に識別する研究が盛んである．
-
-
-\section{問題設定}
-本論文では，スレッド構造を持つオンライン市民議論データに対して，
 
 \section{提案手法}
-本論文では，スレッド構造を持つオンライン市民議論データに対して，
+ううう
 
-\section{実験結果}
-本論文では，スレッド構造を持つオンライン市民議論データに対して，
+\section{実験結果から何がわかったか}
+えええ
 
 
 \footnotesize
